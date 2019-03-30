@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PotFragment">
+    <Button
+        android:id="@+id/btn_now"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="현재위치"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text"
+        android:layout_alignTop="@+id/text"
+        android:layout_below="@+id/btn_now"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_lct"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/btn_now"
+        android:layout_toLeftOf="@+id/btn_lct"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:layout_alignBottom="@+id/btn_now"
+        android:hint="목적지"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_lct"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/btn_now"
+        android:text="찾기"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/edit_date"
+        android:layout_width="wrap_content"
+        android:hint="날짜"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:layout_toRightOf="@id/btn_lct"
+        android:layout_toLeftOf="@+id/btn_date"
+        android:layout_alignBottom="@id/btn_now"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_pot"
+        android:layout_alignBottom="@id/btn_now"
+        android:text="찾기"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/btn_pot"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/btn_now"
+        android:text="팟생성"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_date"
+        android:layout_centerHorizontal="true"
+        android:text="팟 목록" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/text"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_below="@+id/toolbar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="출발지 입력"
+        android:id="@+id/txt"/>
+
+    <EditText
+        android:hint="00구 00동"
+        android:id="@+id/edittext"
+        android:gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt"
+        android:layout_toLeftOf="@+id/btn_b"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/btn_a"
+        android:background="@drawable/reg_edittext_style"
+        android:layout_toRightOf="@id/btn_a"
+        />
+
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt"
+        android:visibility="visible"
+        android:layout_marginLeft="2dp"
+        android:text="현재위치"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/btn_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt"
+        android:layout_alignParentRight="true"
+        android:text="지정위치"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="109dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edittext"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="21dp"
+        android:visibility="visible"
+        android:text="Latitude" />
+
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="108dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/lat"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="-40dp"
+        android:layout_toEndOf="@+id/lat"
+        android:layout_toRightOf="@+id/lat"
+        android:visibility="visible"
+        android:text="Longitude" />
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_below="@+id/lon"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:text="Address" />
+
+    <Button
+        android:id="@+id/btn_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:text="입력완료"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/reg_btn_style"
+        android:textColor="#fff"/>
+
+</RelativeLayout>

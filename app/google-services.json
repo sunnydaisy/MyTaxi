@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "182678227232",
+    "firebase_url": "https://mytaxi-1637e.firebaseio.com",
+    "project_id": "mytaxi-1637e",
+    "storage_bucket": "mytaxi-1637e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182678227232:android:d6efee49d6f1924b",
+        "android_client_info": {
+          "package_name": "com.example.s1.mytaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182678227232-k84ngs2prd6vdgohlo4vo4duu78sen7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.s1.mytaxi",
+            "certificate_hash": "40fb9e6fdb9e75705d8ba5400367daa5831ac936"
+          }
+        },
+        {
+          "client_id": "182678227232-o491ls3plakn43jb85bd0tb5i24enfje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.s1.mytaxi",
+            "certificate_hash": "475f5a773559a34cd95bd225d39c78021549d94d"
+          }
+        },
+        {
+          "client_id": "182678227232-mtdot4l306mn35gcf545so2jr4dcv8um.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.s1.mytaxi",
+            "certificate_hash": "5704d4a93ab33801c6d95aebf5590f9cd8def0fc"
+          }
+        },
+        {
+          "client_id": "182678227232-m6kbuek6siprnqdul05fnforvl2hgg9v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.s1.mytaxi",
+            "certificate_hash": "9d0d7deaabeef5dd9f17ab5e7d232db6bf4f8a59"
+          }
+        },
+        {
+          "client_id": "182678227232-1na6a6ndjhlbb6r7a1sopb8qbctgqg7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkFWs-z4KZH2CyKQIPdL3f4b0AL8NYrO0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182678227232-1na6a6ndjhlbb6r7a1sopb8qbctgqg7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

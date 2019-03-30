@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="팟 작성"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/txt_p"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="출발지 입력"
+        android:id="@+id/btn_dep"
+        android:layout_below="@+id/txt_p"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        app:met_floatingLabel="normal"
+        android:background="@drawable/reg_edittext_style"
+        android:layout_toLeftOf="@+id/btn_dep"
+        android:layout_toRightOf="@+id/t"
+        android:layout_alignBottom="@+id/btn_dep"
+        android:layout_alignTop="@id/btn_dep"
+        android:hint="Departure"
+        android:scrollHorizontally="true"
+        android:layout_below="@+id/txt_p"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="목적지 입력"
+        android:id="@+id/btn_dest"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btn_dep"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_style"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/finish"
+        app:met_floatingLabel="normal"
+        android:background="@drawable/reg_edittext_style"
+        android:layout_toLeftOf="@+id/btn_dest"
+        android:layout_alignBottom="@+id/btn_dest"
+        android:layout_toRightOf="@+id/t"
+        android:layout_alignTop="@id/btn_dest"
+        android:layout_marginTop="5dp"
+        android:hint="Destination"/>
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_dest"
+        android:text="탑승객 성별 "
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/radioGroup2"
+        android:layout_alignTop="@id/radioGroup2"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentLeft="true"/>
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finish"
+        android:layout_below="@id/finish"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동성" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상관 없음" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="탑승 날짜 "
+        android:textStyle="bold"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/t"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/radioGroup1" />
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finish"
+        android:layout_below="@id/radioGroup2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다른 날짜" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/finish"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_alignRight="@+id/finish"
+        android:hint="00월 00일"
+        android:id="@+id/edit_date"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/finish"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_alignRight="@+id/finish"
+        android:hint="00월 00일"
+        android:id="@+id/text_date"
+        android:layout_alignBottom="@+id/edit_date"
+        android:gravity="center_vertical"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="작성"
+        android:id="@+id/btn_pot"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_date"
+        android:background="@drawable/reg_btn_style"
+        android:textColor="#fff"/>
+
+
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_pot"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="183dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</RelativeLayout>
